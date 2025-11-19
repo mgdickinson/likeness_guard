@@ -1,5 +1,3 @@
-'use client';
-
 export default function MailchimpForm() {
   return (
     <div className="max-w-xl mx-auto">
@@ -10,12 +8,12 @@ export default function MailchimpForm() {
         </div>
 
         <form
-          action="https://gmail.us7.list-manage.com/subscribe/post?u=5f7bf11325f37f19829960e65&amp;id=df07fc30d6&amp;f_id=00d381e2f0"
+          action="https://gmail.us7.list-manage.com/subscribe/post?u=5f7bf11325f37f19829960e65&id=df07fc30d6&f_id=00d381e2f0"
           method="post"
           id="mc-embedded-subscribe-form"
           name="mc-embedded-subscribe-form"
-          className="validate space-y-4"
           target="_blank"
+          className="validate space-y-4"
         >
           {/* Email */}
           <div>
@@ -100,12 +98,6 @@ export default function MailchimpForm() {
             />
           </div>
 
-          {/* Response messages */}
-          <div id="mce-responses" className="clear">
-            <div className="response" id="mce-error-response" style={{display: 'none'}}></div>
-            <div className="response" id="mce-success-response" style={{display: 'none'}}></div>
-          </div>
-
           {/* Bot prevention */}
           <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
             <input type="text" name="b_5f7bf11325f37f19829960e65_df07fc30d6" tabIndex={-1} />
@@ -126,26 +118,6 @@ export default function MailchimpForm() {
           </p>
         </form>
       </div>
-
-      {/* Mailchimp validation script */}
-      <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-      <script
-        type="text/javascript"
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function($) {
-              window.fnames = new Array();
-              window.ftypes = new Array();
-              fnames[0]='EMAIL';ftypes[0]='email';
-              fnames[5]='MMERGE5';ftypes[5]='dropdown';
-              fnames[6]='MMERGE6';ftypes[6]='dropdown';
-              fnames[1]='FNAME';ftypes[1]='text';
-              fnames[2]='LNAME';ftypes[2]='text';
-            }(jQuery));
-            var $mcj = jQuery.noConflict(true);
-          `
-        }}
-      />
     </div>
   );
 }
