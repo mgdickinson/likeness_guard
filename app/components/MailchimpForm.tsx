@@ -5,8 +5,8 @@ export default function MailchimpForm() {
     <div className="max-w-xl mx-auto">
       <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-8 shadow-xl">
         <div className="text-center mb-8">
-          <h3 className="text-3xl font-bold text-white mb-3 tracking-tight">Join the Waitlist</h3>
-          <p className="text-[#a8a8a8]">Be the first to protect your digital identity</p>
+          <h3 className="text-3xl font-bold text-white mb-3 tracking-tight">Request Access</h3>
+          <p className="text-[#a8a8a8]">Limited spots available. Applications reviewed within 48 hours.</p>
         </div>
 
         <form
@@ -116,13 +116,13 @@ export default function MailchimpForm() {
             type="submit"
             name="subscribe"
             id="mc-embedded-subscribe"
-            className="w-full px-8 py-4 bg-[#ceff66] hover:bg-[#b8e856] text-[#0f0c09] rounded-lg font-bold text-lg transition-all duration-200 shadow-lg hover:shadow-[#ceff66]/50 hover:scale-[1.02] mt-6"
+            className="w-full px-8 py-4 bg-[#ceff66] hover:bg-[#b8e856] text-[#0f0c09] rounded-lg font-bold text-lg transition-colors duration-200 mt-6"
           >
-            Get Early Access
+            Submit Application
           </button>
 
           <p className="text-xs text-[#666] text-center mt-4">
-            We respect your privacy. Unsubscribe at any time.
+            Your information is confidential and never shared.
           </p>
         </form>
       </div>

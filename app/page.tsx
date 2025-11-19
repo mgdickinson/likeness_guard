@@ -51,7 +51,7 @@ export default function Home() {
               href="#waitlist"
               className="px-6 py-3 bg-[#ceff66] hover:bg-[#b8e856] text-[#0f0c09] rounded-lg font-bold text-sm transition-colors duration-200"
             >
-              Join Waitlist
+              Request Access
             </a>
           </nav>
         </div>
@@ -60,7 +60,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 py-20 sm:py-28">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Text content */}
+            <div className="text-center lg:text-left">
             <motion.div
               className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full mb-8"
               initial={{ opacity: 0, y: 20 }}
@@ -72,7 +74,7 @@ export default function Home() {
             </motion.div>
 
             <motion.h1
-              className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1] tracking-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-[1.1] tracking-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] as const }}
@@ -91,12 +93,12 @@ export default function Home() {
             </motion.p>
 
             <motion.p
-              className="text-lg text-[#a8a8a8] mb-10 max-w-2xl mx-auto leading-relaxed"
+              className="text-lg text-[#a8a8a8] mb-10 lg:max-w-lg leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] as const }}
             >
-              AI can now copy your face and voice in seconds — creating deepfakes, impersonations, and content you never agreed to. We give you the easiest way to claim your likeness and get proactive protection.
+              AI can now copy your face and voice in seconds, creating deepfakes, impersonations, and content you never agreed to. We give you the easiest way to claim your likeness and get proactive protection.
             </motion.p>
 
             <motion.a
@@ -106,11 +108,39 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] as const }}
             >
-              Get Protected Today
+              Request Early Access
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
               </svg>
             </motion.a>
+            </div>
+
+            {/* Right side - Hero image */}
+            <motion.div
+              className="relative hidden lg:block -mr-32"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] as const }}
+            >
+              {/* Glow effect behind image */}
+              <div className="absolute inset-0 bg-[#ceff66]/5 blur-3xl rounded-full"></div>
+
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/hero-image.png"
+                  alt="AI Identity Protection - Facial recognition technology protecting your digital identity"
+                  width={600}
+                  height={900}
+                  className="w-full h-auto"
+                  priority
+                  style={{
+                    filter: 'brightness(0.85) contrast(1.05) saturate(0.9)',
+                    maskImage: 'linear-gradient(to right, transparent 0%, black 25%, black 100%)',
+                    WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 25%, black 100%)'
+                  }}
+                />
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -176,7 +206,7 @@ export default function Home() {
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-3">Register Your Likeness</h3>
                   <p className="text-[#a8a8a8] leading-relaxed">
-                    Upload a quick face scan and voice sample. We generate your official digital identity profile — your proof of ownership in the AI era.
+                    Upload a quick face scan and voice sample. We generate your official digital identity profile: your proof of ownership in the AI era.
                   </p>
                 </div>
               </div>
@@ -233,7 +263,7 @@ export default function Home() {
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-3">Proactive Protection</h3>
                   <p className="text-[#a8a8a8] leading-relaxed">
-                    Join the Likeness Registry — a privacy-first standard that makes it easy for responsible AI companies to exclude your likeness from their systems.
+                    Join the Likeness Registry, a privacy-first standard that makes it easy for responsible AI companies to exclude your likeness from their systems.
                   </p>
                 </div>
               </div>
@@ -266,10 +296,10 @@ export default function Home() {
                 The Likeness Registry
               </h2>
               <p className="text-xl text-[#e7e7e7] mb-6 leading-relaxed">
-                Once registered, your identity becomes part of the Likeness Registry — a privacy-first standard used by responsible AI developers to avoid training on protected individuals.
+                Once registered, your identity becomes part of the Likeness Registry, a privacy-first standard used by responsible AI developers to avoid training on protected individuals.
               </p>
               <p className="text-lg text-[#a8a8a8] leading-relaxed">
-                Modern AI companies can automatically exclude your face and voice from future training datasets and generation tools. This gives you built-in protection as the AI ecosystem evolves — a proactive shield that ensures your likeness is respected, not replicated.
+                Modern AI companies can automatically exclude your face and voice from future training datasets and generation tools. This gives you built-in protection as the AI ecosystem evolves: a proactive shield that ensures your likeness is respected, not replicated.
               </p>
             </motion.div>
           </div>
@@ -333,10 +363,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <motion.div className="text-center mb-12" {...fadeInUp}>
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4 tracking-tight">
-              Your likeness shouldn&apos;t be used<br />without your consent
+              Join the select few protecting<br />their digital identity
             </h2>
             <p className="text-xl text-[#e7e7e7]">
-              We make it simple to protect it.
+              Request access to LikenessGuard. Invitation only.
             </p>
           </motion.div>
           <motion.div
