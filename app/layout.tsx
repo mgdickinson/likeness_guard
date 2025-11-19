@@ -15,6 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "LikenessGuard - Own Your AI Likeness",
   description: "Protect yourself from AI fraud, deepfakes, and identity theft. Scan your face and voice for proactive digital identity protection.",
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/logo-final.png',
+  },
 };
 
 export default function RootLayout({
