@@ -64,19 +64,22 @@ export default function Home() {
 
       {/* Trust Bar */}
       <section className="border-y border-white/10 bg-white/[0.02]">
-        <div className="max-w-7xl mx-auto px-6 py-8">
-          <div className="grid grid-cols-3 gap-8 text-center">
+        <div className="max-w-7xl mx-auto px-6 py-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-4xl font-bold text-[#ceff66] mb-2">24/7</div>
-              <div className="text-[#a8a8a8] text-sm">Continuous Monitoring</div>
+              <div className="text-[#e7e7e7] text-sm font-medium mb-1">Active Monitoring</div>
+              <div className="text-[#a8a8a8] text-xs">Continuous protection while you sleep</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-[#ceff66] mb-2">100%</div>
-              <div className="text-[#a8a8a8] text-sm">Privacy-First</div>
+              <div className="text-4xl font-bold text-[#ceff66] mb-2">Zero Sharing</div>
+              <div className="text-[#e7e7e7] text-sm font-medium mb-1">Your identity is never sold</div>
+              <div className="text-[#a8a8a8] text-xs">Complete ownership of your data</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-[#ceff66] mb-2">&lt;1min</div>
-              <div className="text-[#a8a8a8] text-sm">Alert Response</div>
+              <div className="text-4xl font-bold text-[#ceff66] mb-2">Real-Time Alerts</div>
+              <div className="text-[#e7e7e7] text-sm font-medium mb-1">Immediate notifications</div>
+              <div className="text-[#a8a8a8] text-xs">Act fast on suspicious activity</div>
             </div>
           </div>
         </div>
