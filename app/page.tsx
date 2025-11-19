@@ -1,3 +1,5 @@
+import MailchimpForm from './components/MailchimpForm';
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-blue-950 to-slate-950">
@@ -131,22 +133,9 @@ export default function Home() {
         </div>
       </div>
 
-      {/* CTA Section */}
+      {/* Signup Section */}
       <div className="max-w-7xl mx-auto px-6 py-24">
-        <div className="relative overflow-hidden bg-gradient-to-r from-cyan-600 to-blue-700 rounded-3xl p-12 sm:p-16">
-          <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,.05)_50%,transparent_75%,transparent_100%)] bg-[length:250%_250%,100%_100%] animate-[shimmer_3s_linear_infinite]" />
-          <div className="relative text-center">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-              Secure Your Digital Future Today
-            </h2>
-            <p className="text-xl text-cyan-50 mb-8 max-w-2xl mx-auto">
-              Join thousands protecting their identity with next-generation AI security
-            </p>
-            <button className="px-10 py-5 bg-white text-blue-700 rounded-full font-bold text-lg hover:bg-slate-100 transition-all duration-200 hover:scale-105 shadow-xl">
-              Get Started Free
-            </button>
-          </div>
-        </div>
+        <MailchimpForm />
       </div>
 
       {/* Footer */}
