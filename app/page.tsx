@@ -1,5 +1,4 @@
 import MailchimpForm from './components/MailchimpForm';
-import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -9,13 +8,6 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-6">
           <nav className="flex justify-between items-center">
             <div className="flex items-center gap-3">
-              <Image
-                src="/logo.png"
-                alt="LikenessGuard Logo"
-                width={40}
-                height={40}
-                className="w-10 h-10"
-              />
               <span className="text-2xl font-bold text-white tracking-tight">
                 LikenessGuard
               </span>
