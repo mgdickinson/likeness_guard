@@ -28,28 +28,28 @@ export default function Home() {
     <div className="min-h-screen bg-[#0f0c09] text-white">
       {/* Header */}
       <header className="border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-6">
-          <nav className="flex justify-between items-center">
-            <div className="flex items-center gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6">
+          <nav className="flex justify-between items-center gap-2 sm:gap-4">
+            <div className="flex items-center gap-2 sm:gap-4 min-w-0">
               <Image
                 src="/logo-final.png"
                 alt="LikenessGuard"
                 width={56}
                 height={56}
-                className="w-14 h-14"
+                className="w-10 h-10 sm:w-14 sm:h-14 flex-shrink-0"
               />
-              <div>
-                <div className="text-2xl font-bold text-white tracking-tight leading-none">
+              <div className="min-w-0">
+                <div className="text-lg sm:text-2xl font-bold text-white tracking-tight leading-none truncate">
                   LikenessGuard
                 </div>
-                <div className="text-xs text-[#ceff66] font-medium">
+                <div className="text-xs text-[#ceff66] font-medium hidden sm:block">
                   AI Identity Protection
                 </div>
               </div>
             </div>
             <a
               href="#waitlist"
-              className="px-6 py-3 bg-[#ceff66] hover:bg-[#b8e856] text-[#0f0c09] rounded-lg font-bold text-sm transition-colors duration-200"
+              className="px-4 py-2 sm:px-6 sm:py-3 bg-[#ceff66] hover:bg-[#b8e856] text-[#0f0c09] rounded-lg font-bold text-xs sm:text-sm transition-colors duration-200 whitespace-nowrap flex-shrink-0"
             >
               Request Access
             </a>
